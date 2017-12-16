@@ -24,9 +24,6 @@
   <script src="/js/qrious.js"></script>
 <script src="/js/gitment.js"></script>
 </head>
-<div class="wechat-share">
-  <img src="/css/images/logo.png" />
-</div>
 
   <body>
     <header class="header fixed-header">
@@ -138,10 +135,10 @@
     
     <!-- 打赏 END -->
     <!-- 二维码 START -->
-    <div class="qrcode">
+    <!--<div class="qrcode">
       <canvas id="share-qrcode"></canvas>
       <p class="notice">扫描二维码，分享此文章</p>
-    </div>
+    </div>-->
     <!-- 二维码 END -->
     
       <!-- Gitment START -->
@@ -219,12 +216,12 @@
     });
 
     // gitment
-    var gitmentConfig = "hcqeric";
+    var gitmentConfig = "undefined";
     if (gitmentConfig !== 'undefined') {
       var gitment = new Gitment({
         id: "Hello World",
-        owner: "hcqeric",
-        repo: "hcqeric.github.io",
+        owner: "undefined",
+        repo: "undefined",
         oauth: {
           client_id: "undefined",
           client_secret: "undefined"
@@ -252,7 +249,7 @@
 </div>
     <footer class="app-footer">
   <p class="copyright">
-    &copy; 2017 | Proudly powered by <a href="https://hexo.io" target="_blank">Hexo</a>
+    &copy; 2017 |Powered by <a href="https://hcqeric.github.io" target="_blank">MXLK</a>
     <br>
     Theme by <a href="https://github.com/yanm1ng">yanm1ng</a>
   </p>
