@@ -10,7 +10,7 @@
   
   <title>
     
-      Hello World | MXLK
+      export vs export default | MXLK
     
   </title>
   <link href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
@@ -109,8 +109,8 @@
 </header>
 
     <div id="article-banner">
-  <h2>Hello World</h2>
-  <p class="post-date">2017-11-04</p>
+  <h2>export vs export default</h2>
+  <p class="post-date">2018-04-09</p>
   <div class="arrow-down">
     <a href="javascript:;"></a>
   </div>
@@ -118,17 +118,22 @@
 <main class="app-body flex-box">
   <!-- Article START -->
   <article class="post-article">
-    <section class="markdown-content"><p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+    <section class="markdown-content"><p>在ES6中，export 和 export default都可以用于导出常量、函数、模块、组件和文件等，你可以在其它文件或模块中通过import+(常量 | 函数 | 文件 | 模块)名的方式，将其导入，以便能够对其进行使用，但在一个文件或模块中，export、import可以有多个，export default仅有一个。</p>
+<h3 id="export使用"><a href="#export使用" class="headerlink" title="export使用"></a>export使用</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">export</span> const INCREMENT = <span class="string">"increment"</span></div><div class="line"></div><div class="line"><span class="built_in">export</span> <span class="keyword">function</span> add(n1, n2)&#123;</div><div class="line">  <span class="built_in">return</span> n1 + n2</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="导入方式"><a href="#导入方式" class="headerlink" title="导入方式"></a>导入方式</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">import &#123;increment,  add&#125; from <span class="string">'xxx'</span>   //xxx为导出模块的文件路径</div></pre></td></tr></table></figure>
+<h3 id="export-default使用"><a href="#export-default使用" class="headerlink" title="export default使用"></a>export default使用</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">export</span> default const DECREMENT = <span class="string">'decrement'</span></div></pre></td></tr></table></figure>
+<h3 id="导入方式-1"><a href="#导入方式-1" class="headerlink" title="导入方式"></a>导入方式</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">import decrement from <span class="string">'xxx'</span>   //xxx为导出模块的文件路径</div></pre></td></tr></table></figure>
 </section>
     <!-- Tags START -->
+    
+      <div class="tags">
+        <span>Tags:</span>
+        
+  <a href="/tags#es6" >
+    <span class="tag-code">es6</span>
+  </a>
+
+      </div>
     
     <!-- Tags END -->
     <!-- 打赏 START -->
@@ -153,7 +158,7 @@
   <div class="toc-main">
     <strong class="toc-title">Catalog</strong>
     
-      <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#Quick-Start"><span class="toc-nav-text">Quick Start</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#Create-a-new-post"><span class="toc-nav-text">Create a new post</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#Run-server"><span class="toc-nav-text">Run server</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#Generate-static-files"><span class="toc-nav-text">Generate static files</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#Deploy-to-remote-sites"><span class="toc-nav-text">Deploy to remote sites</span></a></li></ol></li></ol>
+      <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#export使用"><span class="toc-nav-text">export使用</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#导入方式"><span class="toc-nav-text">导入方式</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#export-default使用"><span class="toc-nav-text">export default使用</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#导入方式-1"><span class="toc-nav-text">导入方式</span></a></li></ol>
     
   </div>
 </aside>
@@ -163,7 +168,7 @@
 
 <script>
   (function () {
-    var url = 'http://yoursite.com/2017/11/04/hello-world/';
+    var url = 'http://yoursite.com/2018/04/09/es6-export/';
     var banner = 'undefined'
     if (banner !== '' && banner !== 'undefined' && banner !== 'null') {
       $('#article-banner').css({
@@ -219,7 +224,7 @@
     var gitmentConfig = "undefined";
     if (gitmentConfig !== 'undefined') {
       var gitment = new Gitment({
-        id: "Hello World",
+        id: "export vs export default",
         owner: "undefined",
         repo: "undefined",
         oauth: {
